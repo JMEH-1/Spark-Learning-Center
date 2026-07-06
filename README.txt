@@ -10,34 +10,34 @@ This environment is engineered to enforce strict institutional branding consiste
 
 ![Spark Learning Center OU Structure](OUSTRUCT.png)
 
-* 📁 **Spark Learning Center (OU)**
-  * 📁 **Finance (OU)**
-    * 👤 Peter (User)
-  * 📁 **HR (OU)**
-    * 👤 Sara (User)
-  * 📁 **IT (OU)**
-    * 👤 Ali (User)
-  * 📁 **Students (OU)**
-    * 👤 Tommy (User)
-  * 📁 **SecGroups (OU)**
-    * 🛡️ Finance_SecGroup (Security Group)
-    * 🛡️ HR_SecGroup (Security Group)
-    * 🛡️ IT_SecGroup (Security Group)
-    * 🛡️ Staff_SecGroup (Security Group)
-    * 🛡️ Students_SecGroup (Security Group)
+* **Spark Learning Center (OU)**
+  * **Finance (OU)**
+    * Peter (User)
+  * **HR (OU)**
+    * Sara (User)
+  * **IT (OU)**
+    * Ali (User)
+  * **Students (OU)**
+    * Tommy (User)
+  * **SecGroups (OU)**
+    * Finance_SecGroup (Security Group)
+    * HR_SecGroup (Security Group)
+    * IT_SecGroup (Security Group)
+    * Staff_SecGroup (Security Group)
+    * Students_SecGroup (Security Group)
 
 ---
 
-# File Share & Network Drive Specifications
+# File Share and Network Drive Specifications
 
 To optimize day-to-day learning and operations, network shares are provisioned via Group Policy Preferences (GPP) and secured using Access-Based Enumeration (ABE) to maintain institutional confidentiality.
 
 | Drive | Share Name | Target Directory UNC Path | Target OU / Audience |
 | :---: | :--- | :--- | :--- |
-| **[F:]** | FIN | `\\server\shares\finance` | Finance Department |
-| **[H:]** | HR | `\\server\shares\hr` | HR Department |
-| **[I:]** | IT | `\\server\shares\it` | IT Department |
-| **[S:]** | Students | `\\server\shares\students` | Students Department |
+| [F:] | FIN | `\\server\shares\finance` | Finance Department |
+| [H:] | HR | `\\server\shares\hr` | HR Department |
+| [I:] | IT | `\\server\shares\it` | IT Department |
+| [S:] | Students | `\\server\shares\students` | Students Department |
 
 ---
 
@@ -46,18 +46,20 @@ To optimize day-to-day learning and operations, network shares are provisioned v
 A hierarchical nested group structure minimizes administrative overhead and establishes a ready-made framework for future organizational growth.
 
 ### Structure
-* 🛡️ **Staff_SecGroup**
-  * 🛡️ Finance_SecGroup *(Member)*
-  * 🛡️ HR_SecGroup *(Member)*
-  * 🛡️ IT_SecGroup *(Member)*
+
+* **Staff_SecGroup**
+  * Finance_SecGroup *(Member)*
+  * HR_SecGroup *(Member)*
+  * IT_SecGroup *(Member)*
 
 ### Technical Justification
+
 * **Inheritance-Based Access:** Granting the parent `Staff_SecGroup` Remote Desktop Protocol (RDP) permissions automatically passes those rights down to the child specialized staff groups (Finance, HR, IT). 
 * **Administrative Efficiency:** Prevents the duplication of access control lists (ACLs) across individual departments and centralizes endpoint access management.
 
 ---
 
-# Group Policy Objects (GPO) Core Configuration
+# Group Policy Objects Configuration
 
 **Linked OU:** `Spark Learning Center > Students`
 
