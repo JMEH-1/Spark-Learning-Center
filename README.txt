@@ -77,5 +77,5 @@ Linked OU: Spark Learning Center > Students
 ========================================================================
 🖼️ ARCHITECTURE DIAGRAM ATTACHMENT
 ========================================================================
-View the complete Active Directory structure visualization here:
-[OUSTRUCT.png](OUSTRUCT.png)
+View the complete Active Directory structure visualization by opening the included
+png named OUSTRUCT.png
