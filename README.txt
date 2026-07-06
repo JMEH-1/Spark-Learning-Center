@@ -34,12 +34,12 @@ To optimize day-to-day learning and operations, network shares are
 provisioned via Group Policy Preferences (GPP) and secured using Access-
 Based Enumeration (ABE) to maintain institutional confidentiality.
 
-Drive | Share Name    | Target Directory UNC Path        | Target OU / Audience
+Drive | Share Name    | Target Directory UNC Path        | Target Security Group
 ------|---------------|----------------------------------|----------------------
- [F:] | FIN           | \\server\shares\finance          | Finance Department
- [H:] | HR            | \\server\shares\hr               | HR Department
- [I:] | IT            | \\server\shares\it               | IT Department
- [S:] | Students      | \\server\shares\students         | Students Department
+ [F:] | FIN           | \\server\shares\finance          | Finance_SecGroup
+ [H:] | HR            | \\server\shares\hr               | HR_SecGroup
+ [I:] | IT            | \\server\shares\it               | IT_SecGroup
+ [S:] | Students      | \\server\shares\students         | Students_SecGroup
 
 ========================================================================
 🛡️ ACTIVE DIRECTORY SECURITY GROUP NESTING
@@ -53,10 +53,11 @@ Structure:
     ├── 🛡️ HR_SecGroup (Member)
     └── 🛡️ IT_SecGroup (Member)
 
-Technical Justification:
-* Inheritance-Based Access: Granting the parent 'Staff_SecGroup' Remote 
-  Desktop Protocol (RDP) permissions automatically passes those rights 
-  down to the child specialized staff groups (Finance, HR, IT). 
+Implementation Notes:
+* Role-Based Access: RDP permissions are assigned to the parent Staff_SecGroup.
+  Users in nested departmental security groups (Finance, HR, and IT)
+  receive the same access through group membership, simplifying permission
+  management. 
 * Administrative Efficiency: Prevents the duplication of access control 
   lists (ACLs) across individual departments and centralizes endpoint 
   access management.
@@ -72,7 +73,7 @@ Linked OU: Spark Learning Center > Students
   wallpaper" (Enabled).
 * Business Case: Maintains institutional branding consistency across 
   on-site learning PCs, ensures a standardized technical environment, 
-  and maintains an elite professional look across lab workstations.
+  and maintains a professional look across lab workstations.
 
 ========================================================================
 🖼️ ARCHITECTURE DIAGRAM ATTACHMENT
