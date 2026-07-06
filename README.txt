@@ -1,5 +1,5 @@
 ========================================================================
-📋 ENTERPRISE DEPLOYMENT MISSION STATEMENT
+📋 DEPLOYMENT OVERVIEW
 ========================================================================
 Spark Learning Center is a small and growing IT technical school. This 
 Active Directory deployment provides a practical organizational layout to 
