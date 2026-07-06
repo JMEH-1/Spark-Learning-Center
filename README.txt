@@ -73,3 +73,9 @@ Linked OU: Spark Learning Center > Students
 * Business Case: Maintains institutional branding consistency across 
   on-site learning PCs, ensures a standardized technical environment, 
   and maintains an elite professional look across lab workstations.
+
+========================================================================
+🖼️ ARCHITECTURE DIAGRAM ATTACHMENT
+========================================================================
+View the complete Active Directory structure visualization here:
+[OUSTRUCT.png](OUSTRUCT.png)
