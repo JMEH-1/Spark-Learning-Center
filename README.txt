@@ -43,7 +43,7 @@ To optimize day-to-day learning and operations, network shares are provisioned v
 
 # Active Directory Security Group Nesting
 
- A hierarchical nested group structure minimizes administrative overhead and establishes a ready-made framework for future organizational growth.
+A hierarchical nested group structure minimizes administrative overhead and establishes a ready-made framework for future organizational growth.
 
 ### Structure
 * 🛡️ **Staff_SecGroup**
