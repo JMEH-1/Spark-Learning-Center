@@ -1,16 +1,12 @@
 ========================================================================
 📋 ENTERPRISE DEPLOYMENT MISSION STATEMENT
 ========================================================================
-Spark Learning Center is an agile, emerging technical institution 
-dedicated to providing high-quality IT education. To facilitate seamless, 
-day-to-day operations and student learning, this infrastructure deployment 
-establishes a scalable Active Directory foundation optimized for on-site, 
-hardware-intensive lab environments. 
-
-This environment is engineered to enforce strict institutional branding 
-consistency, streamline endpoint administration, and provide an elastic, 
-standardized structural layout designed to absorb immediate organizational 
-and headcount growth.
+Spark Learning Center is a small and growing IT technical school. This 
+Active Directory deployment provides a practical organizational layout to 
+support day-to-day learning and on-site lab computers. The directory 
+structure is built to streamline user management, ensure consistent 
+desktop branding across student PCs, and provide a clear framework that 
+can easily expand as the school grows.
 
 ========================================================================
 📁 DIRECTORY HIERARCHY MAP
